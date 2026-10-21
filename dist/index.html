@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f9f8f6">
+  <meta name="description" content="А в квадрате. Медиа о бизнесе и людях. Контент и SMM, PR и коммуникации, коллаборации и стратегические проекты.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="А в квадрате — медиа о бизнесе и людях">
+  <meta property="og:description" content="Контент и SMM · PR и коммуникации · Коллаборации · Стратегические проекты">
+  <meta property="og:url" content="https://a-v-kvadrate-media.divinedace6.chatgpt.site">
+  <meta property="og:image" content="https://a-v-kvadrate-media.divinedace6.chatgpt.site/assets/hero-desktop.webp">
+  <title>А в квадрате — медиа о бизнесе и людях</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/prata-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#services">К направлениям работы</a>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <picture class="hero__picture">
+        <source media="(max-width: 700px)" srcset="assets/hero-mobile.webp">
+        <img src="assets/hero-desktop.webp" width="1843" height="853" alt="Девушка в чёрном костюме с журналом «А в квадрате»" fetchpriority="high">
+      </picture>
+      <a class="brand" href="./" aria-label="А в квадрате — главная">
+        <svg class="brand__mark" viewBox="0 0 100 70" aria-hidden="true">
+          <defs><linearGradient id="brand-blue" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#0032ff"/><stop offset=".5" stop-color="#0048ff"/><stop offset="1" stop-color="#005dff"/></linearGradient></defs>
+          <path fill="#a5a5a6" d="M37 0 50 24 25 70H0Z"/>
+          <path fill="#a5a5a6" d="m56 34 23 36H50l-8-13Z"/>
+          <path fill="url(#brand-blue)" d="M47 0h53v70H91Z"/>
+        </svg>
+        <span class="brand__divider" aria-hidden="true"></span>
+        <span class="brand__name"><span>А В</span><span>КВАДРАТЕ</span></span>
+      </a>
+      <div class="hero__copy">
+        <h1 id="hero-title"><span>Медиа</span><span>о бизнесе</span><span>и людях</span></h1>
+        <span class="hero__rule" aria-hidden="true"></span>
+      </div>
+    </section>
+
+    <div class="editorial-footer">
+      <nav class="services" id="services" aria-label="Направления работы">
+        <button class="service" type="button" data-service="content" aria-haspopup="dialog" aria-controls="service-dialog">
+          <span class="service__number">01</span>
+          <svg class="service__icon" viewBox="0 0 64 54" fill="none" aria-hidden="true"><path d="M5 5h29v29H5zM29 25h29v29H29z" stroke="currentColor" stroke-width="2.5"/><path d="M28 27h8v9h-8z" stroke="currentColor" stroke-width="1.5"/></svg>
+          <span class="service__title">Контент и SMM</span>
+        </button>
+        <button class="service" type="button" data-service="pr" aria-haspopup="dialog" aria-controls="service-dialog">
+          <span class="service__number">02</span>
+          <svg class="service__icon" viewBox="0 0 64 54" fill="none" aria-hidden="true"><circle cx="23" cy="28" r="18" stroke="currentColor" stroke-width="2.5"/><circle cx="45" cy="28" r="18" stroke="currentColor" stroke-width="2.5"/></svg>
+          <span class="service__title">PR и коммуникации</span>
+        </button>
+        <button class="service" type="button" data-service="collaboration" aria-haspopup="dialog" aria-controls="service-dialog">
+          <span class="service__number">03</span>
+          <svg class="service__icon" viewBox="0 0 64 54" fill="none" aria-hidden="true"><path d="M6 46 25 9M24 46 43 9M42 46 61 9" stroke="currentColor" stroke-width="3.4"/></svg>
+          <span class="service__title">Коллаборации</span>
+        </button>
+        <button class="service" type="button" data-service="strategy" aria-haspopup="dialog" aria-controls="service-dialog">
+          <span class="service__number">04</span>
+          <svg class="service__icon" viewBox="0 0 64 54" fill="none" aria-hidden="true"><path d="m32 5 25 43H35M29 48H7L32 5" stroke="currentColor" stroke-width="2.5"/></svg>
+          <span class="service__title">Стратегические<br class="desktop-break"> проекты</span>
+        </button>
+      </nav>
+
+      <section class="partners" aria-labelledby="partners-title">
+        <div class="partners__heading"><h2 id="partners-title">Наши партнёры</h2><span aria-hidden="true"></span></div>
+        <ul class="partners__list" aria-label="Партнёры">
+          <li>РАНХиГС</li><li>Aviasales</li><li>Додо Пицца</li><li>Финам</li><li>Астерия</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <dialog class="service-dialog" id="service-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-description">
+    <div class="service-dialog__inner">
+      <div class="service-dialog__top"><span class="service-dialog__eyebrow">А В КВАДРАТЕ / <span id="dialog-number"></span></span><button class="dialog-close" type="button" aria-label="Закрыть"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 5 14 14M19 5 5 19" stroke="currentColor" stroke-width="1.5"/></svg></button></div>
+      <h2 id="dialog-title"></h2>
+      <p id="dialog-description"></p>
+      <ul id="dialog-items"></ul>
+      <button class="dialog-back" type="button">Ко всем направлениям <span aria-hidden="true">↗</span></button>
+    </div>
+  </dialog>
+</body>
+</html>
